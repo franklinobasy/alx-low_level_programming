@@ -9,14 +9,16 @@ int main(void)
 	int i;
 
 	i = 0;
-	while (i < 9)
+	while (i < 10)
 	{
 		putchar(i + '0');
-		putchar(44);
-		putchar(32);
+		if (i < 9)
+		{
+			putchar(44);
+			putchar(32);
+		}
 		i++;
 	}
-	putchar(i + '0');
 	putchar(10);
 	return (0);
 }
