@@ -25,7 +25,7 @@ int main(void)
 			putchar(i + '0');
 			i++;
 		}
-		putchar(10);
-		return (0);
 	}
+	putchar(10);
+	return (0);
 }
