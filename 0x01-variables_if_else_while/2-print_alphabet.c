@@ -12,7 +12,7 @@ int main(void)
 
 	ch = 97;
 	i = 0;
-	while (i < 23)
+	while (i < 26)
 	{
 		putchar(ch);
 		ch++;
