@@ -18,5 +18,6 @@ int main(void)
 		ch++;
 		i++;
 	}
+	putchar(10);
 	return (0);
 }
