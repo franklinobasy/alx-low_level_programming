@@ -10,7 +10,7 @@ int main(void)
 	int i;
 	int j;
 	int a, b, c, d;
-	
+
 	for (i = 0; i < 99; i++)
 	{
 		for (j = 1; j < 100; j++)
@@ -22,7 +22,7 @@ int main(void)
 			/* second numbers group*/
 			c = j / 10;
 			d = j % 10;
-			if ( i < j)
+			if (i < j)
 			{
 				putchar(a + '0');
 				putchar(b + '0');
