@@ -29,17 +29,11 @@ int main(void)
 				putchar(32); /* space number group*/
 				putchar(c + '0');
 				putchar(d + '0');
-			}
-			if ((i != 98) && (j != 99))
-			{
 				putchar(44);
 				putchar(32);
 			}
-			else
-			{
-				putchar('\n');
-			}
 		}
 	}
+	putchar('\n');
 	return (0);
 }
