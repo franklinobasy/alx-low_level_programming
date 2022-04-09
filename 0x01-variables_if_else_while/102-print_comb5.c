@@ -9,35 +9,34 @@ int main(void)
 {
 	int i;
 	int j;
-	int k;
-	int w;
+	int a, b, c, d;
 	
 	for (i = 0; i < 10; i++)
 	{
-		for (j = 0; j < 9; j++)
+		for (j = 1; j < 9; j++)
 		{
-			for (k = 0; k < 10; k++)
+			/* first number group*/
+			a = i / 10;
+			b = i % 10;
+			/* second number group*/
+			c = j / 10;
+			d = j % 10;
+			if (a < c || (a == c &&  b < d))
 			{
-				for (w = 1; w < 10; w++)
+				putchar(a + '0');
+				putchar(b + '0');
+				putchar(32); /* space*/
+				putchar(c + '0');
+				putchar(d + '0');
+				if (!(a == 9 && b == 8))
 				{
-					if (i != k && j != w)
-					{
-						putchar(i + '0');
-						putchar(j + '0');
-						putchar(32);
-						putchar(k + '0');
-						putchar(w + '0');
-						if (i == 9 && j == 8 && k == 9 && w == 9)
-							putchar(10);
-						else
-						{
-							putchar(44);
-							putchar(32);
-						}
-					}
+					putchar(44);
+					putchar(32);
 				}
 			}
+
 		}
 	}
+	putchar('\n');
 	return (0);
 }
