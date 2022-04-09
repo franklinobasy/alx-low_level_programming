@@ -29,8 +29,14 @@ int main(void)
 				putchar(32); /* space number group*/
 				putchar(c + '0');
 				putchar(d + '0');
-				putchar(44);
-				putchar(32);
+				if ((a == 9) && (b == 8) && (c == 9) && (d == 9))
+				{
+					continue;
+				else
+				{
+					putchar(44);
+					putchar(32);
+				}
 			}
 		}
 	}
