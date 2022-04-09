@@ -30,7 +30,7 @@ int main(void)
 				putchar(c + '0');
 				putchar(d + '0');
 			}
-			if ((i < j) && (i != 98) && (j != 99))
+			if ((i < j) || (i != 98) && (j != 99))
 			{
 				putchar(44);
 				putchar(32);
