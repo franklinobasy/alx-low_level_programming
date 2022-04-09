@@ -11,30 +11,30 @@ int main(void)
 	int j;
 	int a, b, c, d;
 	
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 99; i++)
 	{
-		for (j = 1; j < 9; j++)
+		for (j = 1; j < 100; j++)
 		{
-			/* first number group*/
+			/* first numbers group*/
 			a = i / 10;
 			b = i % 10;
-			/* second number group*/
+
+			/* second numbers group*/
 			c = j / 10;
 			d = j % 10;
-			if (a < c || (a == c &&  b < d))
+			if ( j > i)
 			{
 				putchar(a + '0');
 				putchar(b + '0');
-				putchar(32); /* space*/
+				putchar(32); /* space number group*/
 				putchar(c + '0');
 				putchar(d + '0');
-				if (!(a == 9 && b == 8))
-				{
-					putchar(44);
-					putchar(32);
-				}
 			}
-
+			if (!(i == 98 && j == 99))
+			{
+				putchar(44);
+				putchar(32);
+			}
 		}
 	}
 	putchar('\n');
