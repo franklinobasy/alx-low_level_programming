@@ -2,6 +2,7 @@
 
 /**
  * _islower - check if a character is lower caser
+ * @c : character to check the case
  *
  * Return: throws 1 else throws 0
  */
