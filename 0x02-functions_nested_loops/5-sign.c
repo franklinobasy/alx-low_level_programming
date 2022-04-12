@@ -1,7 +1,7 @@
 #include "headers.h"
 /**
  * print_sign - Evaluate sign of number
- * @n - number to be checked
+ * @n: number to be checked
  *
  * Return: 1, 0 or -1
  */
