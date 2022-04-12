@@ -1,6 +1,6 @@
 /**
  * _abs - returns absolute value
- * @n - number to check
+ * @n : number to check
  *
  * Return: 0 or 1
  */
