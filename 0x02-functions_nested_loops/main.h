@@ -1,4 +1,5 @@
-#define MAIN_H_
+#ifndef MAIN_H_INCLUDED
+#define MAIN_H_INCLUDED
 
 /*
  * File: main.h
@@ -14,3 +15,4 @@ int _islower(int c);
 int _isalpha(int c);
 int print_sign(int n);
 
+#endif
