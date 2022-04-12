@@ -1,3 +1,5 @@
+#include "header.h"
+
 /**
  * print_alphabet - prints alphabet in lowercase, followed by a new line
  */

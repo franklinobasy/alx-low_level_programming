@@ -1,10 +1,14 @@
-#define MAIN_H_
+#define HEADERS_H_
 
 /*
- * File: main.h
+ * File: headers.h
  * Auth: Franklin Obasi
  * Desc: Header file containing declaration for all functions used
  * 	 in the 0x02-functions_nested_loops directory
  */
-int main(void);
+
+void print_alphabet(void);
+
+int _putchar(char);
+
 
