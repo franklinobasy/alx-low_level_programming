@@ -14,16 +14,16 @@ int main(void)
 	prev = 1;
 	next = 1;
 	ans = prev + next;
-	printf("%d, %d, ", next, ans);
+	printf("%ld, %ld, ", next, ans);
 	for (i = 1; i <= 48; i++)
 	{
 		prev = next;
 		next = ans;
 		ans = prev + next;
 		if (i == 48)
-			printf("%d\n", ans);
+			printf("%ld\n", ans);
 		else
-			printf("%d, ", ans);
+			printf("%ld, ", ans);
 	}
 	return (0);
 }
