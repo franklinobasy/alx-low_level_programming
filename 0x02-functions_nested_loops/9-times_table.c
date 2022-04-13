@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * times_table - display times table
@@ -14,7 +15,7 @@ void times_table(void)
 		for (i = 0; i < 10; i++)
 		{
 			result = n * i;
-			_putchar(result);
+			printf(result);
 			_putchar(',');
 			_putchar(' ');
 		}
