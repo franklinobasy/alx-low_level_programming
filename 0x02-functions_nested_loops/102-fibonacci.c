@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	int i, prev, next, ans;
+	long int i, prev, next, ans;
 
 	prev = 1;
 	next = 1;
