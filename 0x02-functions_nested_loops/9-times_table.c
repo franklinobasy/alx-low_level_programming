@@ -11,12 +11,18 @@ void times_table(void)
 
 	n = 0;
 	while (n < 10)
-	{
 		for (i = 0; i < 10; i++)
 		{
 			result = n * i;
-			_putchar(result / 10 + '0');
-			_putchar(result % 10 + '0');
+			if (result < 10)
+			{
+				_putchar('0' + result % 10);
+			}
+			else
+			{
+				_putchar(result / 10 + '0');
+				_putchar(result % 10 + '0');
+			}
 			if (result == 81)
 			{
 				continue;
