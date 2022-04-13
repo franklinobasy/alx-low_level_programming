@@ -17,8 +17,15 @@ void times_table(void)
 			result = n * i;
 			if (result < 10)
 			{
-				_putchar(' ');
-				_putchar('0' + result % 10);
+				if (!(result == 0))
+				{
+					_putchar(' ');
+					_putchar('0' + result % 10);
+				}
+				else
+				{
+					_putchar('0' + result % 10);
+				}
 			}
 			else
 			{
