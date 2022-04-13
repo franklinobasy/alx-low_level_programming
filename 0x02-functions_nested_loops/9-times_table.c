@@ -15,7 +15,17 @@ void times_table(void)
 		for (i = 0; i < 10; i++)
 		{
 			result = n * i;
-			printf("%d, ", result);
+			_putchar(result / 10 + '0');
+			_putchar(result % 10 + '0');
+			if (result == 81)
+			{
+				continue;
+			}
+			else
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 		_putchar('\n');
 		n++;
