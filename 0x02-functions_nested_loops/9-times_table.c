@@ -31,8 +31,13 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar(',');
-				_putchar(' ');
+				if (i == 10)
+					continue;
+				else
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
 		}
 		_putchar('\n');
