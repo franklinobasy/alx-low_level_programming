@@ -10,7 +10,7 @@
  */
 int main(void)
 {
-	unsigned long prev, next, ans;
+	unsigned long int prev, next, ans;
 	int i;
 
 	i = 1;
