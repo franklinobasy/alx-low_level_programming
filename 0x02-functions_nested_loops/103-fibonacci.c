@@ -15,13 +15,12 @@ int main(void)
 	next = 1;
 	ans = 0;
 	sum = 0;
-	printf("%u, %u, ", next, ans);
 	for (i = 1; i <= 4000000; i++)
 	{
 		prev = next;
 		next = ans;
 		ans = prev + next;
-		if ((ans % 2) == 0)
+		if ((i % 2) == 0)
 			sum = sum + ans;
 	}
 	printf("%u\n", sum);
