@@ -10,13 +10,28 @@ void print_to_98(int n)
 	int val;
 
 	val = n;
-	while (val >= 98)
+	if ((val > 98) && (val == 98))
 	{
-		if (val == 98)
-			printf("%d", val);
-		else
-			printf("%d, ", val);
-		val--;
+		while (val >= 98)
+		{
+			if (val == 98)
+				printf("%d", val);
+			else
+				printf("%d, ", val);
+			val--;
+		}
+	}
+	else if ((val < 98) && (val == 98))
+	{
+		while (val <= 98)
+		{
+			if (val == 98)
+				printf("%d", val);
+			else
+				printf("%d, ", val);
+
+			val++;
+		}
 	}
 	putchar('\n');
 }
