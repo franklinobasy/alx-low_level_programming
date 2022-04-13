@@ -15,7 +15,7 @@ int main(void)
 	next = 1;
 	ans = 0;
 	sum = 0;
-	printf("%ld, %ld, ", next, ans);
+	printf("%u, %u, ", next, ans);
 	for (i = 1; i <= 4000000; i++)
 	{
 		prev = next;
