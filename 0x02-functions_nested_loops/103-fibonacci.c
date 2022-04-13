@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	unsigned int i, prev, next, ans, sum;
+	unsigned int prev, next, ans, sum;
 
 	prev = 1;
 	next = 1;
