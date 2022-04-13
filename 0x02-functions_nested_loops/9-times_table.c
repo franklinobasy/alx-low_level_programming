@@ -31,7 +31,7 @@ void times_table(void)
 			}
 			else
 			{
-				if (i == 10)
+				if (i == 9)
 					continue;
 				else
 				{
