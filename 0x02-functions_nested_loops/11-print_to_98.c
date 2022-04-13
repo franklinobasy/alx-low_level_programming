@@ -10,7 +10,7 @@ void print_to_98(int n)
 	int val;
 
 	val = n;
-	if ((val > 98) && (val == 98))
+	if ((val > 98) || (val == 98))
 	{
 		while (val >= 98)
 		{
@@ -21,7 +21,7 @@ void print_to_98(int n)
 			val--;
 		}
 	}
-	else if ((val < 98) && (val == 98))
+	else if ((val < 98) || (val == 98))
 	{
 		while (val <= 98)
 		{
