@@ -29,7 +29,7 @@ int main(void)
 	}
 	prev_half1 = prev / 10000000000, next_half1 = next / 10000000000;
 	prev_half2 = prev % 10000000000, next_half2 = next % 10000000000;
-	for (i = 91; i < 98; i++)
+	for (i = 91; i < 97; i++)
 	{
 		half1 = prev_half1 + next_half1;
 		half2 = prev_half2 + next_half2;
@@ -39,7 +39,7 @@ int main(void)
 			half2 %= 10000000000;
 		}
 		printf("%lu%lu", half1, half2);
-		if (i != 97)
+		if (i != 96)
 			printf(", ");
 		prev_half1 = next_half1;
 		prev_half2 = next_half2;
