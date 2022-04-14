@@ -10,23 +10,42 @@
  */
 int main(void)
 {
-	unsigned long int prev, next, ans;
+	unsigned long prev, next, ans;
+	unsigned long prev_half1, prev_half2, next_half1, next_half2;
+	unsigned long half1, half2;
 	int i;
 
 	i = 1;
 	prev = 1;
 	next = 2;
 	printf("%lu, %lu, ", prev, next);
-	while (i <= 97)
+	while (i <= 90)
 	{
 		ans = prev + next;
 		prev = next;
 		next = ans;
-		if (i == 97)
-			printf("%lu\n", ans);
-		else
-			printf("%lu, ", ans);
+		printf("%lu, ", ans);
 		i++;
 	}
+	prev_half1 = prev / 10000000000, next_half1 = next / 10000000000;
+	prev_half2 = prev % 10000000000, next_half2 = next % 10000000000;
+	for (i = 91; i < 98; i++)
+	{
+		half1 = prev_half1 + next_half1;
+		half2 = prev_half2 + next_half2;
+		if (half2 > 9999999999)
+		{
+			half1 += 1;
+			half2 %= 10000000000;
+		}
+		printf("%lu%lu", half1, half2);
+		if (i != 97)
+			printf(", ");
+		prev_half1 = next_half1;
+		prev_half2 = next_half2;
+		next_half1 = half1;
+		next_half2 = half2;
+	}
+	printf("\n");
 	return (0);
 }
