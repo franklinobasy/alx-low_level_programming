@@ -14,13 +14,13 @@ int main(void)
 
 	while (num != 1)
 	{
-		if (num % divisor == 0)
+		if ((num % divisor) == 0)
 		{
 			num = num / divisor;
 			largest = divisor;
 		}
-		divisor += 1;
+		divisor = divisor + 1;
 	}
-	printf("%ld\n", larg_prim);
+	printf("%ld\n", largest);
 	return (0);
 }
