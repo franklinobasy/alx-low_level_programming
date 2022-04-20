@@ -6,13 +6,13 @@
  */
 void rev_string(char *s)
 {
-	char str[];
 	int l, i;
 	
-	str = *s;
 	l = 0;
 	while (s[l])
 		l++;
+
+	char str[l] = *s;
 
 	for (i = 0; i <= l; i++)
 	{
