@@ -13,7 +13,7 @@ int _atoi(char *s)
 	unsigned int out = 0;
 	unsigned int pn = 1;
 	unsigned int m = 1;
-	int i;
+	unsigned int i;
 	
 	while (*(s + count) != '\0')
 	{
@@ -23,7 +23,7 @@ int _atoi(char *s)
 		if (*(s + count) == '-')
 			pn *= -1;
 		
-		if ((*(s + count) >= '0') &&  (&(s + count) <= '9'))
+		if ((*(s + count) >= '0') &&  (*(s + count) <= '9'))
 		{
 			if (size > 0)
 				m *= 10;
