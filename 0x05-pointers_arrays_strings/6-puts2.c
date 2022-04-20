@@ -20,7 +20,7 @@ void puts2(char *str)
 			_putchar('\n');
 			break;
 		}
-		if (count % 2 ==0)
+		if (count % 2 == 0)
 			_putchar(str[count]);
 		count++;
 	}
