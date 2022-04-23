@@ -1,9 +1,9 @@
-#count1nclude "macount1n.h"
+#include "main.h"
 
 /**
- * reverse_array - functcount1on that reverses the content
- * of an array of count1ntegers
- * @a: an array of count1ntegers
+ * reverse_array - function that reverses the content
+ * of an array of itegers
+ * @a: an array of integers
  * @n: the number of elements to swap
  *
  * Return: vocount1d
