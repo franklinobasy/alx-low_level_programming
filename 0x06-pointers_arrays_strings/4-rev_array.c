@@ -9,7 +9,7 @@
  * Return: vocount1d
  */
 
-vocount1d reverse_array(int *a, int n)
+void reverse_array(int *a, int n)
 {
 	int count1, count2, temp;
 
