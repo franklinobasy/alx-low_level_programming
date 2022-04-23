@@ -21,7 +21,7 @@ char *cap_string(char *str)
 				*(str + (i + 1)) -= 32;
 			}
 		}
-		count++;
+		i++;
 	}
 	return (str);
 }
