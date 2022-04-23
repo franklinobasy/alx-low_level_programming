@@ -13,17 +13,13 @@ void reverse_array(int *a, int n)
 {
 	int count1, count2, temp;
 
-	count1 = 1;
-	while (count1 < n)
+	for (count1 = 1; count1 < n; count1++)
 	{
-		count2 = 0;
-		while (count2 < count1)
+		for (count2 = 0; count2 < (n - count1); count2++)
 		{
 			temp = *(a + count2);
 			*(a + count2) = *(a + (count2 + 1));
 			*(a + (count2 + 1)) = temp;
-			count2++;
 		}
-		count1++;
 	}
 }
