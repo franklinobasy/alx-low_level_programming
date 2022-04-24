@@ -6,7 +6,7 @@
  * Return: pointer to string
  */
 
-char *leet (char *str)
+char *leet(char *str)
 {
 	int count1, count2;
 	char c[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
