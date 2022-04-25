@@ -22,7 +22,7 @@ char *rot13(char *str)
 		{
 			if (*(str + count1) == alphabet[count2])
 			{
-				*(s + count1) = rot13[count2];
+				*(str + count1) = rot13[count2];
 				break;
 			}
 			count2++;
