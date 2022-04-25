@@ -10,11 +10,10 @@
 char *rot13(char *str)
 {
 	int count1, count2;
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rt13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	count1 = 0;
-	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
-
 	while (*(str + count1) != '\0')
 	{
 		count2 = 0;
@@ -22,7 +21,7 @@ char *rot13(char *str)
 		{
 			if (*(str + count1) == alphabet[count2])
 			{
-				*(str + count1) = rot13[count2];
+				*(str + count1) = rt13[count2];
 				break;
 			}
 			count2++;
