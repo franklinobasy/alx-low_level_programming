@@ -14,3 +14,8 @@
 | [`0x07-pointers_arrays_strings`](https://github.com/franklinobasy/alx-low_level_programming/tree/main/0x07-pointers_arrays_strings) | It aims to learn more about pointers, arrays and strings in **C language** |
 | [`0x08-recursion`](https://github.com/franklinobasy/alx-low_level_programming/tree/main/0x08-recursion) | It aims to learn about recursion and how to implement it in **C language** |
 | [`0x09-static_libraries`](https://github.com/franklinobasy/alx-low_level_programming/tree/main/0x09-static_libraries) | It aims to learn about static libraries in **C language** |
+| [`0x0A-argc_argv`](https://github.com/franklinobasy/alx-low_level_programming/tree/main/0x0A-argc_argv) | It aims to learn about how to use arguments passed to a program in **C language** |
+| [`0x0B-malloc_free`](https://github.com/franklinobasy/alx-low_level_programming/tree/main/0x0B-malloc_free) | It aims to learn about automatic and dynamic allocation in **C language** |
+| [`0x0C-more_malloc_free`](https://github.com/franklinobasy/alx-low_level_programming/tree/main/0x0C-more_malloc_free) | Automatic and dynamic allocation, malloc and free |
+| [`0x0D-preprocessor`](https://github.com/franklinobasy/alx-low_level_programming/tree/main/0x0D-preprocessor) | Preprocessor |
+| [`0x0E-structures_typedef`](https://github.com/franklinobasy/alx-low_level_programming/tree/main/0x0E-structures_typedef) | Structures, typedef |
