@@ -19,4 +19,5 @@ void free_dlistint(dlistint_t *head)
 		remnant = head;
 		head = remnant->next;
 		free(remnant);
+	}
 }
