@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc hack-pass.c -c -fPIC && gcc hack-pass.o -shared -o hack-pass.so
+gcc -Wall -c -fPIC -shared -o hack-pass.so hack-pass.c
 export LD_PRELOAD=$PWD/hack-pass.so
