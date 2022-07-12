@@ -2,11 +2,11 @@
 #include <unistd.h>
 
 /**
- * srand - pretends to be the C srand function
+ * rand - pretends to be the C rand function
  *
- * Returns: 9, 8, 10, 24, 75 and 9 sequentially
+ * Returns: success message
  */
-void srand(unsigned int seed)
+void rand(unsigned int seed)
 {
 	const char *nums_txt = "9 8 10 24 75 9\n";
 	const char *txt = "Congratulations, you win the Jackpot!\n";
