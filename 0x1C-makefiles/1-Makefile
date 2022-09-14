@@ -1,7 +1,7 @@
 all: school
 
-CC := gcc
-SRC := $(wildcard *.c)
+CC = gcc
+SRC = $(wildcard *.c)
 
 school: ${SRC} m.h
 	${CC} ${SRC} -o school 
