@@ -36,6 +36,7 @@ def island_perimeter(grid):
             perimeter += validate_cell(grid, i, j, nrow, ncol)
     return perimeter
 
+
 def validate_cell(grid, irow, jcol, nrow, ncol):
     '''
     This function returns valid perimeter of a cell in a grid
