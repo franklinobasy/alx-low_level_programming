@@ -43,6 +43,10 @@ def validate_cell(grid, irow, jcol, nrow, ncol):
     '''
     count = 0
     if grid[irow][jcol] == 1:
+        if irow in [0, nrow - 1]:
+            count += 1
+        if jcol in [0, ncol - 1]:
+            count += 1
         if (irow - 1) >= 0 and grid[irow - 1][jcol] == 0:
             count += 1
         if (irow + 1) < nrow and grid[irow + 1][jcol] == 0:
